@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="/">
+        <p>Add a Post</p>
+        <br>
+        <input type="text" placeholder="Name" name="name"/> 
+        <br/>
+        <br>
+        <input type="text" placeholder="Message" name="message"/>
+        <br>
+        <button style="margin-top: 5px ;">Submit</button>
+    </form>
+    <div>
+        <% if (result.length > 0) { %>
+            <% result.forEach( data => { %>
+            <h1><%= data.name %></h1>
+            <a href="/feed/<%= data._id %>">See more</a>
+        <% })} %>
+        <h1>Hello worlds</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus earum accusantium ipsa <br> 
+            laboriosam ut aspernatur adipisci minus mollitia, doloremque fuga Numquam culpa blanditiis <br>
+            enim  tempore odio magnam? Numquam, id sit. Temporibus, voluptate necessitatibus quisquam autem, &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a method="post" action="/new-user" href="?">See More</a> 
+            <br>
+            dolorem laudantium sint earum nobis perferendis culpa optio voluptatum iure repudiandae quos similique. 
+            
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div>
+        <h1>Nice Weather Today</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus earum accusantium ipsa <br> 
+            laboriosam ut aspernatur adipisci minus mollitia, doloremque fuga Numquam culpa blanditiis <br>
+            enim  tempore odio magnam? Numquam, id sit. Temporibus, voluptate necessitatibus quisquam autem, &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a id="goto" href="?">See More</a> 
+            <br>
+            dolorem laudantium sint earum nobis perferendis culpa optio voluptatum iure repudiandae quos similique. 
+            
+        </p>
+    </div>
+</body>
+</html>
